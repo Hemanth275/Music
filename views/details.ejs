@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cis.css">
+    <title>Music</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+        <a class="logo">MUSIC</a>
+        <nav>
+            <nav>
+                <ul>
+                  <li><a href="/home">HOME</a></li>
+                  <li><a href="/about">ABOUT</a></li>
+                  <li><a href="/contact">CONTACT</a></li>
+                  <li><a href="/upload">NEWSONG</a></li>
+                  <li><a href="/login">LOGOUT</a></li>
+                </ul>
+            </nav>
+        </nav>
+      </div>
+      </div>
+    </div>
+    
+        
+                <div class="song">
+                <img class="cover1" src="data:image/png;base64,<%=items.image.data.toString('base64')%>">
+                <div class="audio">
+                    <p class="title"> <strong><%= items.title%></strong>
+                    <p class="artist"><%= items.artist %> - <%= items.album%></p>
+                    <audio controls="controls" class="adio" autobuffer="autobuffer"><source src="data:audio/mp3;base64,<%=items.audio.data.toString('base64')%>"></audio></p>
+                
+                
+            </div>
+        </div>
+          
+    
+</body>
+</html>

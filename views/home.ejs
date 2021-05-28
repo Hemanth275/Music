@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Music |  <%= title %></title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+        <a class="logo">MUSIC</a>
+        <nav>
+            <nav>
+                <ul>
+                  <li><a href="/home">HOME</a></li>
+                  <li><a href="/about">ABOUT</a></li>
+                  <li><a href="/contact">CONTACT</a></li>
+                  <li><a href="/upload">NEWSONG</a></li>
+                  <li><a href="/logout">LOGOUT</a></li>
+
+                </ul>
+            </nav>
+        </nav>
+      </div>
+      </div>
+    </div>
+    
+   
+    <div class="flex-container">
+        <%  if(items.length>0){ %>
+            <% items.forEach(item =>{%>
+                <div class="song">
+                    <a class="single" href="/songs/<%= item._id %>">
+                <img class="cover" src="data:image/png;base64,<%=item.image.data.toString('base64')%>">
+            </a> 
+                <div class="audio">
+                <p class="title"> <strong><%= item.title%></strong>
+                   
+                <p class="artist"><%= item.artist %> - <%= item.album%></p>
+                
+            </div>
+            
+        </div>
+            <%})%>
+        <%} else{%>
+            <h3>There are no images to display</h3>
+<% }%>
+       
+
+    </div>
+</body>
+</html>

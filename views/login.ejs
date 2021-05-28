@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cis.css">
+    <title>Music | Login</title>
+    <style>
+          * {
+          box-sizing: border-box;
+        }
+                .login {
+                    width: 500px;
+                    height:535px;
+                    margin-left:500px;
+         padding-left: 100px;
+         padding-right: 100px;
+         padding-top: 20px;
+         background-image: linear-gradient(#50A7C2,#B7F8DB );
+
+        }
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        .loginbtn {
+          background-color: #50A7C2;
+          color: blanchedalmond;
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        .loginbtn:hover {
+          opacity: 1;
+        }
+        
+        a {
+          color: dodgerblue;
+        }
+        
+        .signup {
+            background-image: linear-gradient(#B7F8DB );
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+        <a class="logo">MUSIC</a>
+      </div>
+      </div>
+    </div>
+    <form action="/login" method="POST">
+        <div class="login">
+            <h1 style="text-align: center;">LOGIN</h1>
+            <hr>
+        
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Name" name="username" id="username" required>
+        
+            <label for="password"><b> Password</b></label>
+            <input type="password" placeholder=" Password" name="password" id="password" required>
+
+            <hr>
+            <button type="submit" class="loginbtn">Login</button>
+          </div>
+          
+          <div class="container signup">
+            <p>Already have an account? <a href="/register">Sign Up</a>.</p>
+          </div>
+      
+    </form>
+    
+   
+</body>
+</html>

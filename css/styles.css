@@ -1,0 +1,127 @@
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin:10px;
+    padding-top: 40px;
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box; 
+  }
+  body{
+    
+    background: linear-gradient(#50A7C2,#B7F8DB );
+    background-attachment: fixed;
+
+}
+  .flex-container > div {
+    background-color:none;
+    width: 200px;
+    border-radius: 5%;
+    min-width: 50px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+
+  }
+  
+  .movie{
+      float: right;
+  }
+  .title{
+    padding-left: 1px;
+    margin: 8px;
+    font-size: 20px;
+    padding-top: 1px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+  }
+  .artist{
+    font-size: 13px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+  }
+  .container{
+      padding-left: 2%;
+      padding-right: 8%;
+      box-sizing: border-box;
+      background-size: cover;
+      background-position:center;
+      margin: 25px;
+  }
+  .cover{
+      width: 200px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      height: 230px;
+      min-width: 50px;
+      min-height: 80px;
+      border-radius: 5%;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: all ease 0.3s;
+    }
+    .cover:hover,.play:hover{
+        transform: scale(0.98) translateY(+1px);
+    }
+    .navbar{
+        height:12%;
+        display: flex;
+        align-items: center;
+    }
+    div.container{
+        border-bottom: 1.5px solid #bbb;
+    }
+  .logo{
+      font-size: 50px;
+      text-decoration: none;
+      font-style: normal;
+      color: #e3f0ee;
+      text-shadow: 2px 2px 4px #e7eeeaf1;
+  }
+  nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+    list-style: none;
+    font-size: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(247, 233, 233);
+}
+input[type=text],input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #69c2cefa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #63acb9;
+  }
+  
+  .upload-div {
+    background-image: linear-gradient(#50A7C2,#B7F8DB );
+    padding: 20px;
+    width: 500px;
+    margin-left:500px;
+    margin-right: 500px;
+    margin-top:100px;
+    margin-bottom: 50px;
+    position: relative;
+  }

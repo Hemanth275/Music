@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Music |  <%= title %></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+        <a class="logo">MUSIC</a>
+        <nav>
+            <nav>
+                <ul>
+                  <li><a href="/home">HOME</a></li>
+                  <li><a href="/about">ABOUT</a></li>
+                  <li><a href="/contact">CONTACT</a></li>
+                  <li><a href="/upload">NEWSONG</a></li>
+                  <li><a href="/logout">LOGOUT</a></li>
+
+                </ul>
+            </nav>
+        </nav>
+      </div>
+      </div>
+    </div>
+    <div class ="upload-div">
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label for="title">Song Name:</label>
+            <input type="text" id="title" name="title" required>    
+            <label for="album">Movie Name:</label>
+            <input type="text" id="album" name="album" required>
+            <label for="artist">Artist Name:</label>
+            <input type="text" id="artist" name="artist" required>
+            <br>
+            <label for="image">Album Cover</label>
+            <input type="file" accept="image/*" name="image" required>
+            <br><label for="audio">Song Cover</label>
+            <input type="file" accept="audio/*" name="audio" required>
+            <br>
+           
+            <button>Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
