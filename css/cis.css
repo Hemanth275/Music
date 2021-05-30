@@ -10,7 +10,7 @@
 body{
   background-color: #46e0d6;
   background-image: linear-gradient(#50A7C2,#B7F8DB );
-  
+  background-attachment:fixed;
 }
 .navbar{
   height:12%;
