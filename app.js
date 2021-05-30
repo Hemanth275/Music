@@ -87,7 +87,7 @@ app.get("/logout",(req,res)=>{
         else {
             res.render('home', {title:'Home Page', items: items });
         }
-    }).sort({ createdAt: -1 });
+    });
   });
   app.get('/songs/:id', (req, res) => {
     const id = req.params.id;
